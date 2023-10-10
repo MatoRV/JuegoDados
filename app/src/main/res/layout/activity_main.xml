@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/label_jugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j1"
+        android:textColor="#0097A7"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/label_dado1_j1"
+        app:layout_constraintEnd_toStartOf="@id/label_jugador2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/label_jugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j2"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/label_dado1_j2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_jugador1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_dado1_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_d1_j1"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@id/label_num_d1_j1"
+        app:layout_constraintEnd_toStartOf="@id/label_dado1_j2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_jugador1" />
+
+    <TextView
+        android:id="@+id/label_dado1_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_d1_j2"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@id/label_num_d1_j2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_dado1_j1"
+        app:layout_constraintTop_toBottomOf="@id/label_jugador2" />
+
+    <TextView
+        android:id="@+id/label_num_d1_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_res_d1_j1"
+        android:textColor="#0097A7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/label_d2_j1"
+        app:layout_constraintEnd_toStartOf="@id/label_num_d1_j2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_dado1_j1" />
+
+    <TextView
+        android:id="@+id/label_num_d1_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_res_d1_j2"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/label_d2_j2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_num_d1_j1"
+        app:layout_constraintTop_toBottomOf="@id/label_dado1_j2" />
+
+    <TextView
+        android:id="@+id/label_d2_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_d2_j1"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/label_num_d2_j1"
+        app:layout_constraintEnd_toStartOf="@+id/label_d2_j2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_num_d1_j1" />
+
+    <TextView
+        android:id="@+id/label_d2_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_d2_j2"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/label_num_d2_j2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_d2_j1"
+        app:layout_constraintTop_toBottomOf="@+id/label_num_d1_j2" />
+
+    <Button
+        android:id="@+id/button_jugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playGame"
+        android:text="@string/text_button_play"
+        app:layout_constraintBottom_toTopOf="@+id/label_statJ1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_num_d2_j1" />
+
+    <TextView
+        android:id="@+id/label_num_d2_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_res_d2_j1"
+        android:textColor="#0097A7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_jugar"
+        app:layout_constraintEnd_toStartOf="@+id/label_num_d2_j2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_d2_j1" />
+
+    <TextView
+        android:id="@+id/label_num_d2_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_res_d2_j2"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_jugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_num_d2_j1"
+        app:layout_constraintTop_toBottomOf="@+id/label_d2_j2" />
+
+    <TextView
+        android:id="@+id/label_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_empJ1" />
+
+    <TextView
+        android:id="@+id/label_statJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_statj1"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/derJ1"
+        app:layout_constraintEnd_toStartOf="@+id/label_statJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_jugar" />
+
+    <TextView
+        android:id="@+id/label_vicJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_vicJ1"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/label_resultado"
+        app:layout_constraintEnd_toStartOf="@+id/label_derJ1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vicJ1" />
+
+    <TextView
+        android:id="@+id/label_derJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_derJ1"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/label_resultado"
+        app:layout_constraintEnd_toStartOf="@+id/label_empJ1"
+        app:layout_constraintStart_toEndOf="@+id/label_vicJ1"
+        app:layout_constraintTop_toBottomOf="@+id/derJ1" />
+
+    <TextView
+        android:id="@+id/label_empJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_empJ1"
+        app:layout_constraintBottom_toTopOf="@+id/label_resultado"
+        app:layout_constraintEnd_toStartOf="@+id/label_vicJ2"
+        app:layout_constraintStart_toEndOf="@+id/label_derJ1"
+        app:layout_constraintTop_toBottomOf="@+id/empJ1" />
+
+    <TextView
+        android:id="@+id/label_statJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_statJ2"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/vicJ2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_statJ1"
+        app:layout_constraintTop_toBottomOf="@+id/button_jugar" />
+
+    <TextView
+        android:id="@+id/label_vicJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_vicJ2"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/label_resultado"
+        app:layout_constraintEnd_toStartOf="@+id/label_derJ2"
+        app:layout_constraintStart_toEndOf="@+id/label_empJ1"
+        app:layout_constraintTop_toBottomOf="@+id/vicJ2" />
+
+    <TextView
+        android:id="@+id/label_derJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_derJ2"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/label_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label_vicJ2"
+        app:layout_constraintTop_toBottomOf="@+id/derJ2" />
+
+    <TextView
+        android:id="@+id/vicJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_vic"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/label_vicJ1"
+        app:layout_constraintEnd_toStartOf="@+id/derJ1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_statJ1" />
+
+    <TextView
+        android:id="@+id/derJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_der"
+        android:textColor="#0277BD"
+        app:layout_constraintBottom_toTopOf="@+id/label_derJ1"
+        app:layout_constraintEnd_toStartOf="@+id/empJ1"
+        app:layout_constraintStart_toEndOf="@+id/vicJ1"
+        app:layout_constraintTop_toBottomOf="@+id/label_statJ1" />
+
+    <TextView
+        android:id="@+id/empJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_emp"
+        app:layout_constraintBottom_toTopOf="@+id/label_empJ1"
+        app:layout_constraintEnd_toStartOf="@+id/vicJ2"
+        app:layout_constraintStart_toEndOf="@+id/derJ1"
+        app:layout_constraintTop_toBottomOf="@+id/label_statJ1" />
+
+    <TextView
+        android:id="@+id/vicJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_vic"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/label_vicJ2"
+        app:layout_constraintEnd_toStartOf="@+id/derJ2"
+        app:layout_constraintStart_toEndOf="@+id/empJ1"
+        app:layout_constraintTop_toBottomOf="@+id/label_statJ2" />
+
+    <TextView
+        android:id="@+id/derJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_der"
+        android:textColor="#D32F2F"
+        app:layout_constraintBottom_toTopOf="@+id/label_derJ2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vicJ2"
+        app:layout_constraintTop_toBottomOf="@+id/label_statJ2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

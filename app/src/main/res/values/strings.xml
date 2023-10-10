@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Dados2023</string>
+    <string name="text_button_play">Jugar una partida</string>
+    <string name="text_label_j1">Jugador 1</string>
+    <string name="text_label_j2">Jugador 2</string>
+    <string name="text_label_resultado">El resultado es:</string>
+    <string name="text_d1_j1">Dado 1</string>
+    <string name="text_d1_j2">Dado 1</string>
+    <string name="text_res_d1_j1">1</string>
+    <string name="text_res_d1_j2">1</string>
+    <string name="text_d2_j1">Dado 2</string>
+    <string name="text_d2_j2">Dado 2</string>
+    <string name="text_res_d2_j1">1</string>
+    <string name="text_res_d2_j2">1</string>
+    <string name="text_ganaj1">gana Jugador 1</string>
+    <string name="text_ganaj2">gana Jugador 2</string>
+    <string name="text_empate">empate</string>
+    <string name="text_statj1">Estadísticas J1</string>
+    <string name="text_vic">Victorias</string>
+    <string name="text_der">Derrotas</string>
+    <string name="text_emp">Empates</string>
+    <string name="text_vicJ1">0</string>
+    <string name="text_derJ1">0</string>
+    <string name="text_empJ1">0</string>
+    <string name="text_statJ2">Estadísticas J2</string>
+    <string name="text_vicJ2">0</string>
+    <string name="text_derJ2">0</string>
+    <string name="text_empJ2">0</string>
+</resources>
